@@ -3,6 +3,7 @@
 //     input.value = input.value.slice(0, -1);
 // }
 
+// -----------------dom part st-----------------
 
 let classs = document.getElementById('classs')
 
@@ -18,6 +19,12 @@ let seven = document.getElementById('seven')
 let eight = document.getElementById('eight')
 let nine = document.getElementById('nine')
 
+// -----------------dom part end-----------------
+
+
+let clearbtn=()=>{
+    classs.value=''
+}
 
 
 one.addEventListener('click', () => {
