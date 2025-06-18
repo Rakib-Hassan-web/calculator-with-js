@@ -5,9 +5,39 @@
 
 
 let classs = document.getElementById('classs')
+
+let four = document.getElementById('four')
+let five = document.getElementById('five')
+let six = document.getElementById('six')
+
 let seven = document.getElementById('seven')
 let eight = document.getElementById('eight')
 let nine = document.getElementById('nine')
+
+
+
+
+four.addEventListener('click', () => {
+    classs.value += 4
+    
+})
+
+
+five.addEventListener('click', () => {
+    classs.value += 5
+    
+})
+
+
+six.addEventListener('click', () => {
+    classs.value += 6
+    
+})
+
+
+
+
+
 
 
 seven.addEventListener('click', () => {
