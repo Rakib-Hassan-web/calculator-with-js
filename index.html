@@ -17,44 +17,45 @@
     <div class="calculator">
 
 
-        <!-- <form> -->
+        <form>
 
-            <div>
 
-                <input class="input" type="text">
+            <div class="input">
+                <input name="input" type="text">
             </div>
             <div>
-                <button class="ac">AC</button >
-                <button class="de">DE</button>
-                <button class="dot">.</button>
-                <button class="slash">/</button>
+                <input type="button" value="AC" onclick="input.value = '' ">
+                <input type="button" value="DE" onclick="input.value += input.value.toString().slice(0,-1) ">
+                <input type="button" value="." onclick="input.value += '.' ">
+                <input type="button" value="/" onclick="input.value += '/' ">
             </div>
             <div>
-                <button class="seven"  >7</button  >
-                <button>8</button>
-                <button>9</button>
-                <button>*</button>
+                <input type="button" value="7" onclick="input.value += '7' ">
+                <input type="button" value="8" onclick="input.value += '8' ">
+                <input type="button" value="9"  onclick="input.value += '9' ">
+                <input type="button" value="*"  onclick="input.value += '*' ">
             </div>
             <div>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
+                <input type="button" value="4" onclick="input.value += '4' ">
+                <input type="button" value="5" onclick="input.value += '5' ">
+                <input type="button" value="6" onclick="input.value += '6' ">
+                <input type="button" value="-" onclick="input.value += '-' ">
             </div>
             <div>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
+                <input type="button" value="1" onclick="input.value += '1' " >
+                <input type="button" value="2"  onclick="input.value += '2' ">
+                <input type="button" value="3" onclick="input.value += '3' ">
+                <input type="button" value="+" onclick="input.value += '+' ">
             </div>
             <div>
-                <button>00</button>
-                <button>0</button>
-                <button class="equal">=</button>
+                <input type="button" value="00" onclick="input.value += '00' ">
+                <input type="button" value="0" onclick="input.value += '0' ">
+                <input type="button" class="equal" value="=">
 
             </div>
 
         </form>
+
 
 
     </div>

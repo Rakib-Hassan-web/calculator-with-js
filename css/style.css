@@ -8,7 +8,7 @@ body{
 }
 
 .calculator{
-    width: 300px;
+    width: 350px;
     background: rgba(172, 255, 47, 0.677);
     padding: 30px 20px;
     border-radius: 10px;
@@ -16,7 +16,7 @@ body{
 }
 
 
-.calculator button{
+.calculator form input{
       border: none;
       outline: none;
       width: 60px;
@@ -24,26 +24,33 @@ body{
       border-radius: 10px;
       background: rgb(119, 59, 59);
       font-size: 25px;
-      margin-top: 10px;
-      margin-right: 10px;
+      margin: 10px;
+      cursor: pointer;
+      padding: 8px;
 
 }
   
 .calculator .equal{
-   width: 133px;
+   width: 143px;
 
 }
-.calculator input{
-    width: 80%;
-    padding: 20px;
-    border: none;
-    outline: none;
-    background: transparent;
-    display: flex;
-    justify-content: flex-end;
-    text-align: end;
-    font-size: 40px;
-    font-weight: 800px;
+
+form .input{
+
+    display:flex ;
+    justify-content: end;
+}
+
+
+
+form .input input{
+    width:90% ;
+
+text-align: end;
+background: transparent;
+
+font-size: 48px;
+
 }
 
 
