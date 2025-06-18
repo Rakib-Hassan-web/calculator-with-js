@@ -27,6 +27,22 @@ let clearbtn=()=>{
 }
 
 
+let singledel=()=>{
+
+    classs.value.toString().slice(0,-1)
+}
+
+let dot =()=>{
+    classs.value += '.'
+
+}
+
+
+let slash =()=>{
+    classs.value += '/'
+
+}
+
 one.addEventListener('click', () => {
     classs.value += 1
     
