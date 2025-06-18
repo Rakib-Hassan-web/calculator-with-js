@@ -21,19 +21,20 @@
 
 
             <div class="input">
-                <input name="input" type="text">
+                <input name="input" id="classs" type="text">
             </div>
             <div>
                 <input type="button" value="AC" onclick="input.value = '' ">
-                <input type="button" value="DE" onclick="input.value += input.value.toString().slice(0,-1) ">
+                <input type="button" value="DE"  onclick="input.value.toString().slice(0,-1)">
                 <!-- <input type="button" class="deletlast_char" value="DE"onclick="removeLastChar()"> -->
                 <input type="button" value="." onclick="input.value += '.' ">
                 <input type="button" value="/" onclick="input.value += '/' ">
             </div>
             <div>
-                <input type="button" value="7" onclick="input.value += '7' ">
-                <input type="button" value="8" onclick="input.value += '8' ">
-                <input type="button" value="9"  onclick="input.value += '9' ">
+                <input type="button" value="7" 
+                id="seven">
+                <input type="button" value="8"  id="eight">
+                <input type="button" value="9"  id="nine">
                 <input type="button" value="*"  onclick="input.value += '*' ">
             </div>
             <div>
