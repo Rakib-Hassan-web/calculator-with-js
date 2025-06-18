@@ -15,3 +15,12 @@ seven.addEventListener('click', () => {
     
 })
 
+eight.addEventListener('click', () => {
+    classs.value += 8
+    
+})
+
+nine.addEventListener('click', () => {
+    classs.value += 9
+    
+})
