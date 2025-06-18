@@ -1,59 +1,102 @@
-body{
-background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.calculator{
-    width: 335px;
+.calculator {
+    width: 360px;
     background: rgb(0, 0, 0);
     padding: 30px 20px;
     border-radius: 10px;
-   
-}
-
-
-.calculator form input{
-      border: none;
-      outline: none;
-      width: 60px;
-      height: 60px;
-      border-radius: 10px;
-      background: rgb(119, 59, 59);
-      font-size: 25px;
-      margin: 10px;
-      cursor: pointer;
-      padding: 8px;
-      
-
-}
-  
-.calculator .equal{
-   width: 143px;
 
 }
 
-form .input{
 
-    display:flex ;
+.calculator form input {
+    border: none;
+    outline: none;
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    background: rgb(119, 59, 59);
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    padding: 8px;
+    color: aliceblue;
+    border-radius: 32px;
+
+}
+
+.calculator .equal {
+    width: 148px;
+    background: #0400ff;
+      font-size: 32px !important;
+
+
+
+}
+
+form .input {
+
+    display: flex;
+    color: aliceblue;
     justify-content: end;
 }
 
 
 
 form .input input {
-    width:90% ;
+    width: 90%;
+    color: aliceblue;
 
-text-align: end;
-background: transparent;
+    text-align: end;
+    background: transparent;
 
-font-size: 48px;
+    font-size: 52px;
 
 }
+
+
+
+ #vag {
+    background: #8b00ff !important;
+    font-size: 32px !important;
+}
+.gun {
+    background: #8b00ff !important;
+        font-size: 32px !important;
+
+}
+
+.biyog {
+    background: #8b00ff !important;
+       font-size: 32px !important;
+
+}
+.jog {
+    background: #8b00ff !important;
+     font-size: 32px !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
