@@ -20,6 +20,20 @@ let nine = document.getElementById('nine')
 
 
 
+one.addEventListener('click', () => {
+    classs.value += 1
+    
+})
+
+two.addEventListener('click', () => {
+    classs.value += 2
+    
+})
+
+three.addEventListener('click', () => {
+    classs.value += 3
+    
+})
 
 
 
