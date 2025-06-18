@@ -28,3 +28,23 @@ body{
       margin-right: 10px;
 
 }
+  
+.calculator .equal{
+   width: 133px;
+
+}
+.calculator input{
+    width: 80%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    font-size: 40px;
+    font-weight: 800px;
+}
+
+
+
