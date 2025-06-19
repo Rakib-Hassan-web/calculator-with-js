@@ -14,6 +14,10 @@ let seven = document.getElementById('seven')
 let eight = document.getElementById('eight')
 let nine = document.getElementById('nine')
 
+let doubleZero = document.getElementById('doubleZero')
+let singlezero = document.getElementById('singlezero')
+
+
 // -----------------dom part end-----------------
 
 
@@ -23,9 +27,7 @@ let clearbtn = () => {
     classs.value = ''
 }
 
-let singledel = () => {
-    classs.value.toString().slice(0, -1)
-}
+
 
 let dot = () => {
     classs.value += '.'
@@ -78,17 +80,41 @@ nine.addEventListener('click', () => {
 // --------------(num 1 To 10 click) part end--------------
 
 
-
+// -------(+,-,* button work) part st----------
 
 let soman=()=>{
     classs.value=classs.value = eval(classs.value)  
 }
 
+let plus=()=>{
+    classs.value=classs.value += '+'  
+}
+let minas=()=>{
+    classs.value=classs.value += '-'  
+}
+
+let multiply=()=>{
+    classs.value=classs.value += '*' 
+}
+
+// -------(+,-,* button work) part end----------
+
+
+// ------- 00 and 0 buton work part st----------
+
+
+doubleZero.addEventListener('click', () => {
+    classs.value += '00'
+})
+
+singlezero.addEventListener('click', () => {
+    classs.value += 0
+})
 
 
 
 
-
+// ------- 00 and 0 buton work part st----------
 
 
 // ------------remove last num part st------------
