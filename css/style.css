@@ -8,14 +8,14 @@ body {
     margin: 0;
 }
 
+/* -------------main div part st-------------------- */
+
 .calculator {
     width: 360px;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.907);
     padding: 30px 20px;
     border-radius: 10px;
-
 }
-
 
 .calculator form input {
     border: none;
@@ -23,80 +23,80 @@ body {
     width: 65px;
     height: 65px;
     border-radius: 10px;
-    background: rgb(119, 59, 59);
+    background: rgba(111, 81, 81, 0.899);
     font-size: 25px;
     margin: 10px;
     cursor: pointer;
     padding: 8px;
-    color: aliceblue;
+    color: #ffffff;
     border-radius: 32px;
-
 }
 
 .calculator .equal {
     width: 148px;
-    background: #0400ff;
-      font-size: 32px !important;
-
-
-
+    background: #ffe000;
+    font-size: 32px !important;
+    color: #000;
 }
 
 form .input {
-
     display: flex;
     color: aliceblue;
     justify-content: end;
 }
 
-
-
 form .input input {
     width: 90%;
     color: aliceblue;
-
     text-align: end;
     background: transparent;
-
     font-size: 52px;
-
 }
 
+/* -------------main div part end-------------------- */
 
 
- #vag {
-    background: #8b00ff !important;
+/* ---------------( +,-,*,/) part st-------- */
+
+#vag {
+    background: #ffe000;
     font-size: 32px !important;
+    color: #000;
 }
-.gun {
-    background: #8b00ff !important;
-        font-size: 32px !important;
 
+.gun {
+    background: #ffe000 !important;
+    font-size: 32px !important;
+    color: #000 !important;
 }
 
 .biyog {
-    background: #8b00ff !important;
-       font-size: 32px !important;
-
+    background: #ffe000 !important;
+    font-size: 32px !important;
+    color: #000 !important;
 }
+
 .jog {
-    background: #8b00ff !important;
-     font-size: 32px !important;
-
+    background: #ffe000 !important;
+    font-size: 32px !important;
+    color: #000 !important;
 }
 
+/* ---------------( +,-,*,/) part end-------- */
 
 
+/* ---------------( AC,DE,(.)part st------------- */
+.ac {
+    background: #cfceff9d !important;
+}
 
+.delet {
+    background: #cfceff9d !important;
+}
 
+.dot {
+    background: #cfceff9d !important;
+    font-size: 35px !important;
+}
 
-
-
-
-
-
-
-
-
-
-
+/* ---------------( AC,DE,(.)part end------------- */

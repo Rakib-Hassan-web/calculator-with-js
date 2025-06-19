@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Calculator with html,cssand js</title>
 
     <!-- -----------css link---------- -->
     <link rel="stylesheet" href="css/style.css">
@@ -12,13 +12,9 @@
 
 <body>
 
-
-
     <div class="calculator">
 
-
         <form>
-
 
             <div class="input">
                 <input name="input" id="classs" type="text">
@@ -27,9 +23,9 @@
             <!-- -----------------------row1 st-------------- -->
 
             <div class="row1">
-                <input type="button" value="AC" onclick="clearbtn()">
-                <input type="button" value="DE" onclick="singledel()">
-                <input type="button" value="." onclick="dot()">
+                <input type="button" value="AC" onclick="clearbtn()" class="ac">
+                <input type="button" value="DE" onclick="removeLastChar()" class="delet">
+                <input type="button" value="." onclick="dot()" class="dot">
                 <input type="button" value="÷" onclick="slash()" id="vag">
             </div>
 
@@ -41,7 +37,7 @@
                 <input type="button" value="7" id="seven">
                 <input type="button" value="8" id="eight">
                 <input type="button" value="9" id="nine">
-                <input type="button" value="*" onclick="input.value += '*' "  class="gun">
+                <input type="button" value="*" onclick="input.value += '*' " class="gun">
             </div>
 
             <!-- -----------------------row2 end-------------- -->
@@ -73,19 +69,14 @@
             <div class="row5">
                 <input type="button" value="00" onclick="input.value += '00' ">
                 <input type="button" value="0" onclick="input.value += '0' ">
-                <input type="button" value="=" onclick="input.value = eval(input.value)  " class="equal">
+                <input type="button" value="=" onclick="soman()" class="equal">
 
             </div>
             <!-- -----------------------row5 end-------------- -->
 
         </form>
 
-
-
     </div>
-
-
-
 
 
     <!-- -------------scipt links-------- -->
