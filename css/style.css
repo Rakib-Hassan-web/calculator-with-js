@@ -89,6 +89,10 @@ form .input input {
 
   form .input input {
     font-size: 40px;
+    width: 100%;          /* full width */
+    min-width: 0;         /* flex shrink fix */
+    overflow-x: auto;     /* overflow হলে scroll হবে */
+    box-sizing: border-box; /* padding include করে width ঠিক রাখবে */
   }
 
   #vag, .gun, .biyog, .jog {
@@ -98,10 +102,4 @@ form .input input {
   .dot {
     font-size: 30px !important;
   }
-}
-form .input input {
-  overflow-x: auto;   /* ← add this line */
-}
-form .input input::-webkit-scrollbar {
-  display: none;
 }
