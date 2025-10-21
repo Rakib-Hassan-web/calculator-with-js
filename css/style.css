@@ -1,116 +1,107 @@
+/* ----------- Responsive Calculator CSS ----------- */
 body {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-/* -------------main div part-------------------- */
+/* -------------main div part st-------------------- */
 .calculator {
-    width: 360px;
-    background: rgba(0, 0, 0, 0.907);
-    padding: 30px 20px;
-    border-radius: 10px;
-    box-sizing: border-box;
+  width: 360px;
+  background: rgba(0, 0, 0, 0.907);
+  padding: 30px 20px;
+  border-radius: 10px;
 }
 
 .calculator form input {
-    border: none;
-    outline: none;
-    width: 65px;
-    height: 65px;
-    border-radius: 32px;
-    background: rgba(111, 81, 81, 0.899);
-    font-size: 25px;
-    margin: 10px;
-    cursor: pointer;
-    padding: 8px;
-    color: #ffffff;
+  border: none;
+  outline: none;
+  width: 65px;
+  height: 65px;
+  border-radius: 32px;
+  background: rgba(111, 81, 81, 0.899);
+  font-size: 25px;
+  margin: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px;
 }
 
 .calculator .equal {
-    width: 148px;
-    background: #ffe000;
-    font-size: 32px !important;
-    color: #000;
+  width: 148px;
+  background: #ffe000;
+  font-size: 32px !important;
+  color: #000;
 }
 
 form .input {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    overflow-x: auto;
+  display: flex;
+  color: aliceblue;
+  justify-content: end;
 }
 
 form .input input {
-    width: 100%;
-    max-width: 100%;
-    color: aliceblue;
-    text-align: end;
-    background: transparent;
-    font-size: 48px;
-    border: none;
-    outline: none;
-    white-space: nowrap;
-    overflow-x: auto;
+  width: 90%;
+  color: aliceblue;
+  text-align: end;
+  background: transparent;
+  font-size: 52px;
 }
 
-/* hide scrollbar */
-form .input::-webkit-scrollbar {
-    display: none;
-}
-form .input {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-/* ---------------(+,-,*,/) part---------------- */
+/* ---------------( +,-,*,/) part st-------- */
 #vag, .gun, .biyog, .jog {
-    background: #ffe000 !important;
-    font-size: 32px !important;
-    color: #000 !important;
+  background: #ffe000 !important;
+  font-size: 32px !important;
+  color: #000 !important;
 }
 
-/* ---------------AC, DE, dot part---------------- */
+/* ---------------( AC,DE,(.)part st------------- */
 .ac, .delet, .dot {
-    background: #cfceff9d !important;
+  background: #cfceff9d !important;
 }
 
 .dot {
-    font-size: 35px !important;
+  font-size: 35px !important;
 }
 
-/* ---------------- RESPONSIVE FOR SMALL/MOBILE DEVICES ---------------- */
-@media (max-width: 480px) {
-    .calculator {
-        width: 90%;
-        padding: 20px 15px;
-    }
+/* --------------- Responsive part for sm devices ------------- */
+@media (max-width: 640px) {
+  .calculator {
+    width: 90%;
+    padding: 20px 10px;
+  }
 
-    .calculator form input {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-        margin: 5px;
-        padding: 6px;
-    }
+  .calculator form input {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+    margin: 5px;
+    padding: 6px;
+  }
 
-    .calculator .equal {
-        width: 100px;
-        font-size: 24px !important;
-    }
+  .calculator .equal {
+    width: 110px;
+    font-size: 28px !important;
+  }
 
-    form .input input {
-        font-size: 32px; /* smaller input text size for mobile */
-    }
+  form .input input {
+    font-size: 40px;
+  }
 
-    #vag, .gun, .biyog, .jog {
-        font-size: 24px !important;
-    }
+  #vag, .gun, .biyog, .jog {
+    font-size: 28px !important;
+  }
 
-    .dot {
-        font-size: 28px !important;
-    }
+  .dot {
+    font-size: 30px !important;
+  }
+}
+form .input input {
+  overflow-x: auto;   /* ← add this line */
+}
+form .input input::-webkit-scrollbar {
+  display: none;
 }
